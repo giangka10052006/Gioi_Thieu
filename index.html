@@ -85,16 +85,17 @@
 
 
     <h2>📬 Gửi lời nhắn cho tớ:</h2>
-    <form action="https://formsubmit.co/giangka20061005@gmail.com" method="POST" class="contact-form">
-      <input type="text" name="name" placeholder="Tên của bạn" required>
-      <input type="email" name="email" placeholder="Email của bạn" required>
-      <textarea name="message" placeholder="Lời nhắn..." rows="4" required></textarea>
+  <form action="https://formsubmit.co/giangka20061005@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Tên của bạn" required><br>
+    <input type="email" name="email" placeholder="Email của bạn" required><br>
+    <textarea name="message" placeholder="Lời nhắn..." rows="4" required></textarea><br>
 
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://www.facebook.com/giang.koy.37454/?locale=vi_VN">
+    <!-- Các tùy chọn ẩn -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://www.facebook.com/giang.koy.37454/?locale=vi_VN">
 
-      <button type="submit" onclick="toggleInfo()" class="info-button">Gửi lời nhắn</button>
-    </form>
+    <button type="submit">Gửi lời nhắn</button>
+  </form>
   </div>
 
   <script src="script.js"></script>
