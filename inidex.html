@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Giới thiệu bản thân</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <img src="anh/dd626956-e9a9-45e8-9671-c4d76cce50b0.jpg" alt="Avatar" class="avatar">
+    <h1>🌟 Xin chào, tớ là <span class="highlight">Giang</span></h1>
+    <p class="origin">Tớ đến từ <strong>Thanh Hóa</strong></p>
+    <ul class="intro">
+      <li>🎓 Hiện là sinh viên trường HaUI, ngành Công nghệ thông tin</li>
+      <li>💻 Đam mê công nghệ</li>
+      <li>📖 Thích học hỏi và lắng nghe</li>
+    </ul>
+
+    <div class="info-section">
+  <button onclick="toggleInfo()" class="info-button">📌 Xem thông tin cá nhân chi tiết</button>
+
+  <div id="personal-info" class="info-hidden">
+    <p><strong>Quê quán:</strong> Hiển Vinh, Hoa Lộc, Thanh Hóa</p>
+    <p><strong>Ngày sinh:</strong> 10/05/2006 </p>
+    <p><strong>Tình trạng hôn nhân:</strong> Độc thân 😄</p>
+    <p><strong>Mã QR:</strong></p>
+    <img src="anh/z6879323257572_b434c4622c3d5ce7ad2f66c15a8a9050.jpg" alt="QR cá nhân" class="qr-img">
+  </div>
+</div>
+
+
+    <h2>📚 Những kỹ năng tớ đang học</h2>
+    <div class="skills">
+      <div class="skill">
+        <span>HTML</span>
+        <div class="progress">
+          <div class="progress-bar w50">50%</div>
+        </div>
+      </div>
+      <div class="skill">
+        <span>CSS</span>
+        <div class="progress">
+          <div class="progress-bar w30">30%</div>
+        </div>
+      </div>
+      <div class="skill">
+        <span>JavaScript</span>
+        <div class="progress">
+          <div class="progress-bar w40">40%</div>
+        </div>
+      </div>
+      <div class="skill">
+        <span>Python</span>
+        <div class="progress">
+          <div class="progress-bar w40">40%</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span>Java</span>
+        <div class="progress">
+          <div class="progress-bar w40">40%</div>
+        </div>
+
+        <div class="skill">
+        <span>C++</span>
+        <div class="progress">
+          <div class="progress-bar w90">90%</div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <h2>Liên hệ với tớ:</h2>
+    <div class="socials">
+      <a href="https://www.facebook.com/giang.koy.37454/?locale=vi_VN" target="_blank" rel="noopener noreferrer"><img src="anh/Screenshot 2025-08-06 103133.png" alt="Facebook"></a>
+      <a href="https://www.tiktok.com/@giangka10052006" target="_blank" rel="noopener noreferrer">
+        <img src="anh/Screenshot 2025-08-06 103214.png" alt="tik tok">
+      </a>
+      <a href="https://m.me/giang.koy.37454/?locale=vi_VN" target="_blank" rel="noopener noreferrer">
+        <img src="anh/Screenshot 2025-08-06 103240.png" alt="messenger">
+      </a>
+    </div>
+
+
+    <h2>📬 Gửi lời nhắn cho tớ:</h2>
+    <form action="https://formsubmit.co/giang20061005@gmail.com" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Tên của bạn" required>
+      <input type="email" name="email" placeholder="Email của bạn" required>
+      <textarea name="message" placeholder="Lời nhắn..." rows="4" required></textarea>
+
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://www.facebook.com/giang.koy.37454/?locale=vi_VN">
+
+      <button type="submit" onclick="toggleInfo()" class="info-button">Gửi lời nhắn</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+
+  <script>
+  function toggleInfo() {
+    const info = document.getElementById("personal-info");
+    if (info.style.display === "none" || info.style.display === "") {
+      info.style.display = "block";
+    } else {
+      info.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>
